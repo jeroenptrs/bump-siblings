@@ -1,0 +1,35 @@
+{
+  "name": "bump-siblings",
+  "version": "1.0.0",
+  "description": "Bump the version of a package in its monorepo siblings",
+  "main": "bin/index.js",
+  "scripts": {
+    "build": "ts-node -O '{\"module\": \"commonjs\"}' scripts/build.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit --pretty"
+  },
+  "author": "Jeroen Peeters <contact@jeroenpeeters.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/shelljs": "^0.8.8",
+    "esbuild": "^0.5.12",
+    "shelljs": "^0.8.4",
+    "shx": "^0.3.2",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.14",
+    "@types/semver": "^7.3.1",
+    "semver": "^7.3.2",
+    "type-fest": "^0.16.0"
+  },
+  "bin": {
+    "bump-siblings": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeroenptrs/bump-siblings.git"
+  }
+}
